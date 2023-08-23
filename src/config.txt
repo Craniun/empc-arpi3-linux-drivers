@@ -64,7 +64,7 @@ dtparam=spi=on
 //enable_uart=1
 
 # CAN
-dtoverlay=mcp2515-can0,oscillator=8000000,interrupt=25
+dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=25
 dtoverlay=spi0-hw-cs
 
 # SERIAL PORT, depending on J301 RS232/RS485 mode is selected automatically, see /etc/udev/rules.d/33-ttysc0-rs232-rs485-mode.rules

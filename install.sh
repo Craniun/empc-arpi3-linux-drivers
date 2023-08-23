@@ -42,7 +42,7 @@ function patchfile {
 }
 
 
-REPORAW="https://raw.githubusercontent.com/janztec/empc-arpi3-linux-drivers/master"
+REPORAW="https://raw.githubusercontent.com/Craniun/empc-arpi3-linux-drivers/master"
 
 ERR='\033[0;31m'
 INFO='\033[0;32m'
@@ -195,7 +195,7 @@ cd /tmp/empc-arpi-linux-drivers
 # compile driver modules
 
 wget -nv https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/plain/drivers/net/can/spi/mcp251x.c?h=v$VERSION.$PATCHLEVEL.$SUBLEVEL -O mcp251x.c
-wget -nv https://raw.githubusercontent.com/janztec/empc-arpi3-linux-drivers/master/src/sc16is7xx.c -O sc16is7xx.c
+wget -nv https://raw.githubusercontent.com/Craniun/empc-arpi3-linux-drivers/master/src/sc16is7xx.c -O sc16is7xx.c
 wget -nv https://git.kernel.org/pub/scm/linux/kernel/git/stable/linux-stable.git/plain/drivers/spi/spi-bcm2835.c?h=v$VERSION.$PATCHLEVEL.$SUBLEVEL -O spi-bcm2835.c
 
 

@@ -55,22 +55,23 @@ disable_overscan=1
 ########################################################################
 
 # I2C
-dtparam=i2c_arm=on
+//dtparam=i2c_arm=on
 
 # SPI
 dtparam=spi=on
 
 # SERIAL CONSOLE
-enable_uart=1
+//enable_uart=1
 
 # CAN
-dtoverlay=mcp2515-can0,oscillator=16000000,interrupt=25
+dtoverlay=mcp2515-can0,oscillator=8000000,interrupt=25
+dtoverlay=spi0-hw-cs
 
 # SERIAL PORT, depending on J301 RS232/RS485 mode is selected automatically, see /etc/udev/rules.d/33-ttysc0-rs232-rs485-mode.rules
-dtoverlay=sc16is7xx-ttysc0-rs232-rs485
+//dtoverlay=sc16is7xx-ttysc0-rs232-rs485
 
 # RTC
-dtoverlay=i2c-rtc,mcp7940x
+//dtoverlay=i2c-rtc,mcp7940x
 
 [pi2]
 # green LED (gpio5) as SD card activity
